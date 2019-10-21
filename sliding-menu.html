@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <style>
+        body{
+            background-color: #777;
+            margin: 0;
+
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: arial;
+        }
+        li{
+            padding: 15px 20px 15px 20px;
+            border-bottom: 1px solid #222;
+        }
+        #navigation{
+            background-color: #333;
+            width: 250px;
+            box-shadow: 0 0 3px 2px #111;
+            margin-left: -252px;
+            transition: 0.5s;
+        }
+        #navigation:hover{
+            margin-left: 0;
+        }
+        #arrow{
+            font-size: 54px;
+            margin-left: 250px;
+            color: #333;
+            /*animation*/
+            animation: flashing 1s infinite;
+        }
+        li:hover{
+            background-color: #555;
+        }
+        li:last-child:hover{
+            background-color: transparent;
+
+        }
+        /*ad rules - animation in CSS*/
+        @keyframes flashing {
+            from{ color: #3338; }
+            to{ color:#333f;}
+        }
+    </style>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li><a href=""><img src="http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/32/red-home-icon.png"> Home</a></li>
+                <li><a href=""><img src="http://icons.iconarchive.com/icons/yohproject/cute/32/camera-2-icon.png"> Photos</a></li>
+                <li><a href=""><img src="http://icons.iconarchive.com/icons/saki/nuoveXT/32/Apps-Community-Help-icon.png"> Communities</a></li>
+                <li><a href=""><img src="http://icons.iconarchive.com/icons/google/noto-emoji-objects/32/62868-page-facing-up-icon.png"> Pages</a></li>
+                <li><a href=""><img src="http://icons.iconarchive.com/icons/google/noto-emoji-travel-places/32/42522-hot-springs-icon.png"> Hot</a></li>
+                <li><a id="arrow" href="">&#10263;</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
+
+    
