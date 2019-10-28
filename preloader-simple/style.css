@@ -1,0 +1,39 @@
+/*reset styles*/
+body{
+    margin: 0;
+}
+/*styles*/
+body{
+    background-color: #333333;
+}
+#preloader{
+    width: 5vh;
+    height: 5vh;
+    border: solid 0.1vh #ff0000;
+    margin: 47.4vh auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    border-radius: 100%;
+    color: #ff0000;
+    /*высота строки*/
+    line-height: 4.5vh;
+    text-align: center;
+    letter-spacing: normal;
+    animation: rot 1s 5;
+}
+#preloader span:first-child{
+    animation: wave 1s 5;
+}
+#preloader span:last-child{
+    animation: wave 1s 5;
+    animation-delay: 0.5s;
+}
+/*animation*/
+@keyframes rot{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes wave{
+    from{color: #ff000000;}
+    to{font-size: #ff0000ff;}
+}
