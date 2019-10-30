@@ -1,0 +1,28 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#main-nav{
+    width: 96vw;
+    margin: 0 auto;
+    padding: 2vh 0;
+}
+#main-nav>ul{
+    float: right;
+}
+#main-nav>.nav-brand{
+    float: left;
+}
+#main-nav li{
+    float: left;
+}
+#main-nav>.nav-social,
+#main-nav>.nav-action{
+    padding-right: 4vw;
+}
+#main-nav>.nav-sicial,
+#main-nav>.nav-menu{
+    padding-left: 4vw;
+}
+#main-nav>.nav-social>li{
+    margin-right: 2vw;
+}
