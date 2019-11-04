@@ -1,0 +1,57 @@
+body{
+    font-family: 'Caveat', cursive;
+    background-color: #323E40;
+}
+#fan{
+    background-color: #555;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+#fan>li{
+    background-color: #A68F7B;
+    color: #fff;
+    width: 800px;
+    text-align: right;
+    padding: 1.5em;
+    position: absolute;
+}
+#fan>li:nth-child(1){
+    transform: rotate (-65deg;
+}
+#fan>li:nth-child(2){
+    transform: rotate (-55deg;
+}
+#fan>li:nth-child(3){
+    transform: rotate (-45deg;
+}
+#fan>li:nth-child(4){
+    transform: rotate (-35deg;
+}
+#fan>li:nth-child(5){
+    transform: rotate (-25deg;
+}
+#fan>li:nth-child(6){
+    transform: rotate (-15deg;
+}
+#fan>li:nth-child(7){
+    transform: rotate (-5deg;
+}
+#fan>li:nth-child(8){
+    transform: rotate (5deg;
+}
+#fan>li:nth-child(9){
+    transform: rotate (15deg;
+}
+#fan>li:nth-child(10){
+    transform: rotate (25deg;
+}
+#fan>li:nth-child(11){
+    transform: rotate (35deg;
+}
+#fan>li:nth-child(12){
+    transform: rotate (45deg;
+}
+#fan>li:nth-child(13){
+    transform: rotate (55deg;
+}
