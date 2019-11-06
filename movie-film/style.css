@@ -1,0 +1,52 @@
+#box{
+    width: 40vh;
+    height: 40vh;
+    background-color: #333;
+    border-radius: 20vh;
+    position: absolute;
+    top: 30vh;
+    left: 33vw;
+    margin-left: -20vh;
+}
+#play-btn{
+    width: 30vh;
+    height: 30vh;
+    background-color: #555;
+    border-radius: 15vh;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    z-index: 1;
+}
+#film{
+    width: 150vw;
+    height: 28vh;
+    background-color: #000;
+    position: absolute;
+    top: 6vh;
+    left: -33vw;
+}
+#film img{
+    height: 24vh;
+    float: left;
+    /* исправить баг с расстоянием между img. */
+    /* margin-right: 20px; */
+    margin-top: 2vh;
+    
+}
+#film .spacer{
+    float: left;
+    width: 20px;
+    height: 1px;
+}
+#film .holes{
+    height: 2vh;
+    width: 150vw;
+    background-color: red;
+    position: absolute;
+    background-image: radial-gradient(red,black);
+    background-size: 10px 10px;
+}
+#film .holes:last-child{
+    bottom: 0;
+}
