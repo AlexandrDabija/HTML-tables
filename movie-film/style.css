@@ -1,7 +1,10 @@
+body{
+    background-image: url(111.png);
+}
 #box{
     width: 40vh;
     height: 40vh;
-    background-color: #333;
+    background-color: #111  ;
     border-radius: 20vh;
     position: absolute;
     top: 30vh;
@@ -11,26 +14,37 @@
 #play-btn{
     width: 30vh;
     height: 30vh;
-    background-color: #555;
+    background-color: rgba(3, 88, 140, 0.9);
     border-radius: 15vh;
     position: absolute;
     top: 5vh;
     left: 5vh;
+    text-align: center;
+    line-height: 30vh;
+    font-size: calc(30vh/4);
     z-index: 1;
 }
+#play-btn i{
+    color: #fff;
+}
 #film{
-    width: 150vw;
+    width: calc(288vh + 9vw); /* calc(9*(4* 24/3 + 1vw)*/
     height: 28vh;
-    background-color: #000;
+    /* background-color: rgb(15, 36, 64); */
     position: absolute;
     top: 6vh;
-    left: -33vw;
+    /* left: -33vw; */
+    left: calc(20vh - 33vw);
+    animation: sliding 100s infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
 }
 #film img{
     height: 24vh;
     float: left;
     /* исправить баг с расстоянием между img. */
-    /* margin-right: 20px; */
+    /* margin-right: 1vw; */
+    border-right: solid 1vw rgba(15, 36, 64, 0.7);
     margin-top: 2vh;
     
 }
@@ -41,12 +55,15 @@
 }
 #film .holes{
     height: 2vh;
-    width: 150vw;
-    background-color: red;
+    width: inherit;
+    /* background-color: red; */
     position: absolute;
-    background-image: radial-gradient(red,black);
-    background-size: 10px 10px;
+    background-image: radial-gradient(transparent 49%,rgba(15, 36, 64, 0.7) 50%);
+    background-size: 3vh 2vh;
 }
 #film .holes:last-child{
     bottom: 0;
+}
+#play-btn:hover+#film{
+    animation-duration: 10s;
 }
