@@ -1,0 +1,72 @@
+body{
+    /* color variables */
+    --bg-darker: rgb(6, 26, 46);
+    --bg-dark: #2C3E50;
+    --bg-light-dark: #34495E;
+    --bg-light: #BDC3C7;
+    --fg-dark: #2980B9;
+    --fg-light: #3498DB;
+    /* dimension variables */
+    --size: 200px;
+    /* bg image variable */
+    --bg-image: image/background.png;
+}
+/* ##################################### */
+body{
+    background-image: url(image/background.png);
+    font-family: arial;
+}
+#preloader{
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--bg-light-dark);
+    border-radius: var(--size);
+    box-shadow: inset 0 0 3px 1px var(--bg-darker);
+}
+#preloader .big{
+    width: calc(0.9 * var(--size));
+    height: calc(0.9 * var(--size));
+    /* background-color: #fff; */
+    border-radius: calc(0.9 * var(--size));
+    border: solid calc(0.02 * var(--size)) var(--fg-light);
+    border-top-color: transparent;
+    transform: rotate(45deg);
+    animation: rotate-a 5s 10;
+   
+}
+.center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#preloader .medium{
+    width: calc(0.8 * var(--size));
+    height: calc(0.8 * var(--size));
+    background-image: url(image/background.png);
+    border-radius: calc(0.8 * var(--size));
+    box-shadow: 0 0 3px 1px var(--bg-darker);
+    transform: rotate(-45deg);
+    animation: rotate-b 5s 10;
+
+}
+#preloader .small{
+    width: calc(0.25 * var(--size));
+    height: 1.25em;
+    background-color: var(--bg-dark);
+    color: var(--fg-light);
+    font-size: calc(1 / 8  * var(--size));
+    text-align: center;
+    line-height: 1.25em;
+    
+}
+@keyframes rotate-a{
+    from{transform: rotate(45deg);}
+    to{transform: rotate(405deg);}
+}
+@keyframes rotate-b{
+    from{transform: rotate(-45deg);}
+    to{transform: rotate(-405deg);}
+}
