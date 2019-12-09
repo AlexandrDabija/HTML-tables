@@ -38,7 +38,9 @@ body {
 }
 
 #navbar .container ul .brand {
-  width: 2000px;
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
 }
 
 #navbar .container ul .burger {
